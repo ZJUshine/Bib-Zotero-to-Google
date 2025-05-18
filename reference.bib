@@ -1,0 +1,54 @@
+
+@misc{li_towards_2024,
+	title = {Towards {Generalist} {Robot} {Policies}: {What} {Matters} in {Building} {Vision}-{Language}-{Action} {Models}},
+	shorttitle = {Towards {Generalist} {Robot} {Policies}},
+	url = {http://arxiv.org/abs/2412.14058},
+	doi = {10.48550/arXiv.2412.14058},
+	abstract = {Foundation Vision Language Models (VLMs) exhibit strong capabilities in multi-modal representation learning, comprehension, and reasoning. By injecting action components into the VLMs, Vision-Language-Action Models (VLAs) can be naturally formed and also show promising performance. Existing work has demonstrated the effectiveness and generalization of VLAs in multiple scenarios and tasks. Nevertheless, the transfer from VLMs to VLAs is not trivial since existing VLAs differ in their backbones, action-prediction formulations, data distributions, and training recipes. This leads to a missing piece for a systematic understanding of the design choices of VLAs. In this work, we disclose the key factors that significantly influence the performance of VLA and focus on answering three essential design choices: which backbone to select, how to formulate the VLA architectures, and when to add cross-embodiment data. The obtained results convince us firmly to explain why we need VLA and develop a new family of VLAs, RoboVLMs, which require very few manual designs and achieve a new state-of-the-art performance in three simulation tasks and real-world experiments. Through our extensive experiments, which include over 8 VLM backbones, 4 policy architectures, and over 600 distinct designed experiments, we provide a detailed guidebook for the future design of VLAs. In addition to the study, the highly flexible RoboVLMs framework, which supports easy integrations of new VLMs and free combinations of various design choices, is made public to facilitate future research. We open-source all details, including codes, models, datasets, and toolkits, along with detailed training and evaluation recipes at: robovlms.github.io.},
+	language = {en},
+	urldate = {2025-02-24},
+	publisher = {arXiv},
+	author = {Li, Xinghang and Li, Peiyan and Liu, Minghuan and Wang, Dong and Liu, Jirong and Kang, Bingyi and Ma, Xiao and Kong, Tao and Zhang, Hanbo and Liu, Huaping},
+	month = dec,
+	year = {2024},
+	note = {arXiv:2412.14058 [cs]
+TLDR: The key factors that significantly influence the performance of VLA are disclosed and a detailed guidebook for the future design of VLAs is provided, which supports easy integrations of new VLMs and free combinations of various design choices.
+remark: 机器人视觉语言行动模型设计的关键因素。},
+	keywords = {Computer Science - Computer Vision and Pattern Recognition, Computer Science - Robotics},
+}
+
+@misc{li_vision-language_2024,
+	title = {Vision-{Language} {Foundation} {Models} as {Effective} {Robot} {Imitators}},
+	url = {http://arxiv.org/abs/2311.01378},
+	doi = {10.48550/arXiv.2311.01378},
+	abstract = {Recent progress in vision language foundation models has shown their ability to understand multimodal data and resolve complicated vision language tasks, including robotics manipulation. We seek a straightforward way of making use of existing vision-language models (VLMs) with simple fine-tuning on robotics data. To this end, we derive a simple and novel vision-language manipulation framework, dubbed RoboFlamingo, built upon the open-source VLMs, OpenFlamingo. Unlike prior works, RoboFlamingo utilizes pre-trained VLMs for single-step vision-language comprehension, models sequential history information with an explicit policy head, and is slightly fine-tuned by imitation learning only on language-conditioned manipulation datasets. Such a decomposition provides RoboFlamingo the flexibility for open-loop control and deployment on low-performance platforms. By exceeding the state-of-the-art performance with a large margin on the tested benchmark, we show RoboFlamingo can be an effective and competitive alternative to adapt VLMs to robot control. Our extensive experimental results also reveal several interesting conclusions regarding the behavior of different pre-trained VLMs on manipulation tasks. We believe RoboFlamingo has the potential to be a cost-effective and easy-to-use solution for robotics manipulation, empowering everyone with the ability to fine-tune their own robotics policy.},
+	language = {en},
+	urldate = {2025-05-17},
+	publisher = {arXiv},
+	author = {Li, Xinghang and Liu, Minghuan and Zhang, Hanbo and Yu, Cunjun and Xu, Jie and Wu, Hongtao and Cheang, Chilam and Jing, Ya and Zhang, Weinan and Liu, Huaping and Li, Hang and Kong, Tao},
+	month = feb,
+	year = {2024},
+	note = {arXiv:2311.01378 [cs]
+TLDR: RoboFlamingo has the potential to be a cost-effective and easy-to-use solution for robotics manipulation, empowering everyone with the ability to fine-tune their own robotics policy.
+remark: RoboFlamingo利用VLMs简化机器人操控。},
+	keywords = {\# RoboFlamingo, Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Computer Science - Robotics},
+}
+
+@misc{cheang_gr-2_2024,
+	title = {{GR}-2: {A} {Generative} {Video}-{Language}-{Action} {Model} with {Web}-{Scale} {Knowledge} for {Robot} {Manipulation}},
+	shorttitle = {{GR}-2},
+	url = {http://arxiv.org/abs/2410.06158},
+	doi = {10.48550/arXiv.2410.06158},
+	abstract = {We present GR-2, a state-of-the-art generalist robot agent for versatile and generalizable robot manipulation. GR-2 is first pre-trained on a vast number of Internet videos to capture the dynamics of the world. This large-scale pre-training, involving 38 million video clips and over 50 billion tokens, equips GR-2 with the ability to generalize across a wide range of robotic tasks and environments during subsequent policy learning. Following this, GR-2 is fine-tuned for both video generation and action prediction using robot trajectories. It exhibits impressive multi-task learning capabilities, achieving an average success rate of 97.7\% across more than 100 tasks. Moreover, GR-2 demonstrates exceptional generalization to new, previously unseen scenarios, including novel backgrounds, environments, objects, and tasks. Notably, GR-2 scales effectively with model size, underscoring its potential for continued growth and application. Project page: {\textbackslash}url\{https://gr2-manipulation.github.io\}.},
+	language = {en-US},
+	urldate = {2024-11-14},
+	publisher = {arXiv},
+	author = {Cheang, Chi-Lam and Chen, Guangzeng and Jing, Ya and Kong, Tao and Li, Hang and Li, Yifeng and Liu, Yuxiao and Wu, Hongtao and Xu, Jiafeng and Yang, Yichu and Zhang, Hanbo and Zhu, Minzhao},
+	month = oct,
+	year = {2024},
+	note = {GSCC: 0000030 2025-03-07T01:48:06.218Z 
+arXiv:2410.06158
+remark: GR-2实现通用化机器人操控及出色任务泛化。
+TLDR: GR-2 is first pre-trained on a vast number of Internet videos to capture the dynamics of the world, equips GR-2 with the ability to generalize across a wide range of robotic tasks and environments during subsequent policy learning.},
+	keywords = {\# GR-2, Computer Science - Computer Vision and Pattern Recognition, Computer Science - Machine Learning, Computer Science - Robotics},
+}
